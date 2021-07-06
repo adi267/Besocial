@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
-const dd = 'mongodb+srv://aditya:1234@cluster0.hk3jb.mongodb.net/myFirstDatabase?retryWrites=true&w=majority';
-mongoose.connect(dd|| 'mongodb://localhost/codeial_development');
+const dd = 'mongodb+srv://aditya:1234@cluster0.p4gq2.mongodb.net/myFirstDatabase?retryWrites=true&w=majority';
+mongoose.connect(process.env || 'mongodb://localhost/codeial_development');
 
 const db = mongoose.connection;
 
